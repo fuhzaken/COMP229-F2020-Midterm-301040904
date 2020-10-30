@@ -1,0 +1,55 @@
+<!---
+File Name: add.ejs
+Author: Kenneth Agustin
+StudentID: 301040904
+Web App Name: Favourite Books List
+-->
+<% include ../partials/header.ejs %>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <h1><%= title %></h1>
+            <form class="form" method="post">
+              <div class="form-group">
+                <label for="NameTextField">Title</label>
+                <input type="text" class="form-control" 
+                id="nameTextField"
+                placeholder="Please enter the Book Title" 
+                name="Title" 
+                required>
+              </div>
+              <div class="form-group">
+                <label for="PriceTextField">Price</label>
+                <input type="text" class="form-control" 
+                id="priceTextField"
+                placeholder="Please enter the Book Price" 
+                name="Price"   
+                required>
+              </div>
+              <div class="form-group">
+                <label for="AuthorTextField">Author</label>
+                <input type="text" class="form-control" 
+                id="authorTextField"
+                placeholder="Please enter the Book Author" 
+                name="Author"                
+                required>
+              </div>
+              <div class="form-group">
+                <label for="GenreTextField">Genre</label>
+                <input type="text" class="form-control" 
+                id="genreTextField"
+                placeholder="Please enter the Book Genre" 
+                name="Genre"   
+                required>
+              </div>
+
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+              <a href="/books" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+            </form>
+        </div>
+      </div>
+    </div>
+
+<% include ../partials/footer.ejs %>
